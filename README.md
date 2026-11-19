@@ -21,9 +21,17 @@ The intended functionality includes:
 - Comparing candidate items against currently equipped gear.
 - Accounting for item effects, relevant stats and set bonuses.
 
-Item information will use World of Warcraft: Forever data sources, including "ForeverDB.net" (https://foreverdb.net), subject to data availability and validation.
+Item and game data will use World of Warcraft: Forever data sources, including the ForeverDB API (https://foreverdb.net), subject to data availability and validation.
 
-Where ForeverDB data is displayed, the bot will provide the required visible attribution and link to ForeverDB.
+Planned ForeverDB API integration
+
+The project intends to use the ForeverDB API to retrieve item, item-set and dungeon information for its gear-upgrade recommendation feature.
+
+API requests will be handled server-side through the Cloudflare Worker. API credentials will be stored securely as server-side secrets, and retrieved data may be cached to limit unnecessary requests and comply with API usage limits.
+
+ForeverDB data will be used within the bot's functionality and will not be redistributed as a standalone dataset.
+
+Where ForeverDB data is displayed, the bot will provide the required visible attribution and a link to ForeverDB.
 
 Project status
 
